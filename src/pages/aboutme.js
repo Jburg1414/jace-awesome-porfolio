@@ -8,11 +8,9 @@ export default function AboutMe() {
         <div className="section-title">
           <h1>About Me</h1>
         </div>
-        <div className="section-content box-column">
-            <div className="picture">
-                <img src="./img/avatar.jpg" alt="Jace Burgess" />
-            </div>
-          <p>
+        <div className="section-content">
+            <img src={require(`../assets/Avatar.jpg`)} alt="Jace Burgess"/>
+          <p className="info">
             Hey my name is Jace Burgess. I am currently enrolled in Coding
             Bootcamp to become a full stack developer. My day job is working on
             heavy equipment although I don't plan on doing that long term which

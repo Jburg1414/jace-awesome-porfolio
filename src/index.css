@@ -12,8 +12,13 @@ code {
     monospace;
 }
 
+:root {
+  --background-color: #6E7487;
+  --primary-color: #0782DA;
+}
+
 body {   
-  background: #454955; 
+  background: var(--background-color);
 }
 
 #about-me {
@@ -27,14 +32,29 @@ body {
 }
 
 .section-content {
+  display: flex;
   flex: 2 85%;
   margin: 10px 0;
   padding: 10px;
 }
 
+img {
+  width: 25%
+}
+
+.info {
+  padding-left: 30px;
+  font-size: 20px;
+}
+
 .box-column {
   display: flex;
   flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
 }
 
 #contact-me {
@@ -63,4 +83,56 @@ form {
 
 .alt-contact {
   padding-top: 25px
+}
+
+.tile {
+  margin: 50px;
+}
+
+.large-tile {
+  height: 400px;
+  background-image: url(../public/img/game-it.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90%;
+}
+
+.small-tile {
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 2 50%;
+  width:90%
+}
+
+.tile-1 {
+  background-image: url(../public/img/homepage.png);
+}
+.tile-2 {
+  background-image: url(../public/img/run-buddy.png);
+}
+.tile-3 {
+  background-image: url(../public/img/horiseon.png);
+}
+.tile-4 {
+  background-image: url(../public/img/weather-dashboard.png);
+}
+.tile-5 {
+  background-image: url(../public/img/budget-tracker.png);
+}
+
+.tile-tag {
+  background-color: var(--primary-color);
+  align-self: flex-end;
+  margin: 0 0 20px 0;
+  padding: 10px;
+  width:75px
+}
+
+.tile-title {
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0 5px 0;
 }

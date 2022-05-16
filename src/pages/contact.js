@@ -1,74 +1,90 @@
 import React, { useState } from "react";
 import { validateEmail } from "../utils/helper";
 
-export default function Contact() {
-  const [contactName, setContactName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+function ContactForm() {
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
   const [errorMessage, setErrorMessage] = useState("");
+  const { name, email, message } = formState;
 
-  const handleInputChange = (e) => {
-    const inputType = e.target.name;
-    const inputValue = e.target.value;
-
-    if (inputType === "contactName") {
-      setContactName(inputValue);
-    } else if (inputType === "email") {
-      setEmail(inputValue);
+  function handleChange(e) {
+    if (e.target.name === "email") {
+      const isValid = validateEmail(e.target.value);
+      // isValid conditional statement
+      if (!isValid) {
+        setErrorMessage("Your email is invalid!");
+      } else {
+        setErrorMessage("");
+      }
     } else {
-      setMessage(inputValue);
+      if (!e.target.value.length) {
+        setErrorMessage(`${e.target.name} is required.`);
+      } else {
+        setErrorMessage("");
+      }
     }
-  };
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+    }
+  }
 
-  const handleFormSubmit = (e) => {
+  function handleSubmit(e) {
     e.preventDefault();
 
-    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
-    if (!validateEmail(email)) {
-      setErrorMessage("Email is invalid");
-      // We want to exit out of this code block if something is wrong so that the user can correct it
-      return;
-      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
-    }
-    alert(`Thank you ${contactName}`);
-
-    // If everything goes according to plan, we want to clear out the input after a successful registration.
-    setContactName("");
-    setMessage("");
-    setEmail("");
-    setErrorMessage("");
-  };
+    console.log(formState);
+  }
   return (
-    <div>
-      <form className="form">
-        <input
-          value={contactName}
-          name="contactName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="name"
-        />
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="email"
-        />
-        <input
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="textarea"
-          placeholder="message"
-        />
-        <button type="button" onClick={handleFormSubmit}>Submit</button>
-      </form>
-      {errorMessage && (
+    <section id="contact-me">
+      <h1 data-testid="h1tag">Contact me</h1>
+      <form className="form" onSubmit={handleSubmit}>
+        <div>
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            defaultValue={name}
+            onBlur={handleChange}
+          />
+        </div>
+
+        <div>
+          <label htmlFor="email">Email address:</label>
+          <input
+            type="email"
+            name="email"
+            defaultValue={email}
+            onBlur={handleChange}
+          />
+        </div>
+
+        <div>
+          <label htmlFor="message">Message:</label>
+          <textarea
+            name="message"
+            rows="5"
+            defaultValue={message}
+            onBlur={handleChange}
+          />
+        </div>
+        {errorMessage && (
           <div>
-              <p className="error-text">{errorMessage}</p>
-          </div>    
-      )}
-    </div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
+        <button data-testid="button" type="submit">
+          Submit
+        </button>
+      </form>
+
+      <div className="alt-contact">
+        Contact me at <a href="jburgess1414@gmail.com">Jace Burgess</a>
+      </div>
+    </section>
   );
 }
+
+export default ContactForm;

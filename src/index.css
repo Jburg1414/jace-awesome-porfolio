@@ -37,10 +37,14 @@ body {
   flex-direction: column;
 }
 
-.form {
-  margin: 20px;
+#contact-me {
+  margin: 15px;
+
 }
 
+form {
+  width:50%;
+}
 
 .form input {
   display: block;
@@ -49,6 +53,14 @@ body {
   width: 75%;
 }
 
-.form input[type=textarea] {
+.form textarea {
+  display: block;
   height: 100px;
+  width: 50%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.alt-contact {
+  padding-top: 25px
 }

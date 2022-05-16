@@ -9,6 +9,9 @@ export default function AboutMe() {
           <h1>About Me</h1>
         </div>
         <div className="section-content box-column">
+            <div className="picture">
+                <img src="./img/avatar.jpg" alt="Jace Burgess" />
+            </div>
           <p>
             Hey my name is Jace Burgess. I am currently enrolled in Coding
             Bootcamp to become a full stack developer. My day job is working on

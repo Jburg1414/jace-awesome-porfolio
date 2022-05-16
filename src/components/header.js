@@ -11,35 +11,25 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 
 const pages = ['About Me', 'Portfolio', 'Resume', 'Contact'];
 
 
 export default function Header({currentPage, handlePageChange}){
     const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -55,7 +45,7 @@ export default function Header({currentPage, handlePageChange}){
               textDecoration: 'none',
             }}
           >
-            LOGO
+            Jace Burgess
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -94,7 +84,6 @@ export default function Header({currentPage, handlePageChange}){
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -111,13 +100,13 @@ export default function Header({currentPage, handlePageChange}){
               textDecoration: 'none',
             }}
           >
-            LOGO
+            Jace Burgess
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={() => handlePageChange(page)}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
                 {page}
@@ -127,9 +116,7 @@ export default function Header({currentPage, handlePageChange}){
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Jace Burgess">
-              <IconButton sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
+                <Avatar alt="Jace Burgess" src="./img/avatar.jpg" sx={{width: 56, height: 56}} />
             </Tooltip>
           </Box>
         </Toolbar>

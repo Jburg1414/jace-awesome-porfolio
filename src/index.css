@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {   
+  background: #454955; 
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  text-align: center;
+  padding: 5px;
+}
+
+.section-content {
+  flex: 2 85%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.box-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  margin: 20px;
+}
+
+
+.form input {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 75%;
+}
+
+.form input[type=textarea] {
+  height: 100px;
+}

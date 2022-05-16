@@ -7,7 +7,7 @@ import Contact from './pages/contact';
 import Resume from './pages/resume';
 // import './App.css';
 
-function App() {
+export default function App() {
   const [currentPage, setCurrentPage] = useState('Home');
   
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
@@ -30,12 +30,9 @@ function App() {
     <div>
       {/* We are passing the currentPage from state and the function to update it */}
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-      <h1> Hello World!</h1>
       {/* Here we are calling the renderPage method which will return a component  */}
-      {/* {renderPage()} */}
+      {renderPage()}
       {/* <Footer /> */}
     </div>
   );
 }
-
-export default App;

@@ -78,7 +78,7 @@ export default function Header({currentPage, handlePageChange}){
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem key={page} onClick={() => handlePageChange(page)}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}

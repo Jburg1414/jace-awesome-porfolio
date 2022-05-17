@@ -70,13 +70,13 @@ form {
   display: block;
   margin-top: 5px;
   margin-bottom: 5px;
-  width: 75%;
+  width: 60%
 }
 
 .form textarea {
   display: block;
   height: 100px;
-  width: 50%;
+  width: 60%;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -135,4 +135,11 @@ form {
   font-weight: bold;
   margin: 0;
   padding: 0 0 5px 0;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  margin: 20px
+
 }

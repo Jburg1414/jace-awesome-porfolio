@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import Header from './components/header';
-import Footer from './components/footer';
 import Home from './pages/aboutme';
 import Portfolio from './pages/portfolio';
 import Contact from './pages/contact';
 import Resume from './pages/resume';
-// import './App.css';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -32,7 +30,6 @@ export default function App() {
       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
-      {/* <Footer /> */}
     </div>
   );
 }

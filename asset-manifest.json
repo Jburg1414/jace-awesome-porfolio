@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/jace-awesome-portfolio/static/css/main.89b2cc6c.css",
+    "main.js": "/jace-awesome-portfolio/static/js/main.941346bf.js",
+    "static/js/787.5be828a8.chunk.js": "/jace-awesome-portfolio/static/js/787.5be828a8.chunk.js",
+    "static/media/Avatar.jpg": "/jace-awesome-portfolio/static/media/Avatar.1542828ef3e49dde130c.jpg",
+    "static/media/horiseon.png": "/jace-awesome-portfolio/static/media/horiseon.bbe29af7a3aef11890c3.png",
+    "static/media/run-buddy.png": "/jace-awesome-portfolio/static/media/run-buddy.791cfd6ba202c25fe845.png",
+    "static/media/weather-dashboard.png": "/jace-awesome-portfolio/static/media/weather-dashboard.2d40a9f152f97566fe1a.png",
+    "static/media/game-it.png": "/jace-awesome-portfolio/static/media/game-it.3c65308dd1e0bdc233c2.png",
+    "static/media/homepage.png": "/jace-awesome-portfolio/static/media/homepage.ad9db9105cd8d864e810.png",
+    "static/media/budget-tracker.png": "/jace-awesome-portfolio/static/media/budget-tracker.21c05b6514bb2dcf5ef3.png",
+    "index.html": "/jace-awesome-portfolio/index.html",
+    "main.89b2cc6c.css.map": "/jace-awesome-portfolio/static/css/main.89b2cc6c.css.map",
+    "main.941346bf.js.map": "/jace-awesome-portfolio/static/js/main.941346bf.js.map",
+    "787.5be828a8.chunk.js.map": "/jace-awesome-portfolio/static/js/787.5be828a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89b2cc6c.css",
+    "static/js/main.941346bf.js"
+  ]
+}

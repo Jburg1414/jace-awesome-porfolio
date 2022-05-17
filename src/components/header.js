@@ -30,23 +30,7 @@ export default function Header({currentPage, handlePageChange}){
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          {/* <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            Jace Burgess
-          </Typography> */}
+
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -84,24 +68,6 @@ export default function Header({currentPage, handlePageChange}){
               ))}
             </Menu>
           </Box>
-          {/* <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            Jace Burgess
-          </Typography> */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
@@ -116,7 +82,7 @@ export default function Header({currentPage, handlePageChange}){
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Jace Burgess">
-                <Avatar alt="Jace Burgess" src="./img/Avatar.jpg" sx={{width: 56, height: 56}} />
+                <Avatar alt="Jace Burgess" src="./assets/Avatar.jpg" sx={{width: 56, height: 56}} />
             </Tooltip>
           </Box>
         </Toolbar>

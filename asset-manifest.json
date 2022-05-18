@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jace-awesome-portfolio/static/css/main.89b2cc6c.css",
-    "main.js": "/jace-awesome-portfolio/static/js/main.48e08c93.js",
+    "main.css": "/jace-awesome-portfolio/static/css/main.90e10587.css",
+    "main.js": "/jace-awesome-portfolio/static/js/main.6773a7c0.js",
     "static/js/787.5be828a8.chunk.js": "/jace-awesome-portfolio/static/js/787.5be828a8.chunk.js",
     "static/media/Avatar.jpg": "/jace-awesome-portfolio/static/media/Avatar.1542828ef3e49dde130c.jpg",
     "static/media/horiseon.png": "/jace-awesome-portfolio/static/media/horiseon.bbe29af7a3aef11890c3.png",
@@ -11,12 +11,12 @@
     "static/media/homepage.png": "/jace-awesome-portfolio/static/media/homepage.ad9db9105cd8d864e810.png",
     "static/media/budget-tracker.png": "/jace-awesome-portfolio/static/media/budget-tracker.21c05b6514bb2dcf5ef3.png",
     "index.html": "/jace-awesome-portfolio/index.html",
-    "main.89b2cc6c.css.map": "/jace-awesome-portfolio/static/css/main.89b2cc6c.css.map",
-    "main.48e08c93.js.map": "/jace-awesome-portfolio/static/js/main.48e08c93.js.map",
+    "main.90e10587.css.map": "/jace-awesome-portfolio/static/css/main.90e10587.css.map",
+    "main.6773a7c0.js.map": "/jace-awesome-portfolio/static/js/main.6773a7c0.js.map",
     "787.5be828a8.chunk.js.map": "/jace-awesome-portfolio/static/js/787.5be828a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.89b2cc6c.css",
-    "static/js/main.48e08c93.js"
+    "static/css/main.90e10587.css",
+    "static/js/main.6773a7c0.js"
   ]
 }

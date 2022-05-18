@@ -143,3 +143,26 @@ form {
   margin: 20px
 
 }
+
+@media screen and (max-width: 900px) { 
+  .section-content {
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    margin: auto;
+    width: 80%;
+  }
+
+  .info {
+    padding-top: 10px;
+  }
+
+  .large-tile {
+    width: auto
+  }
+
+  .small-tile {
+    width: auto;
+  }
+}

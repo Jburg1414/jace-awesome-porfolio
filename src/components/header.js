@@ -11,6 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import AvatorPic from '../assets/Avatar.jpg'
 
 const pages = ['About Me', 'Portfolio', 'Resume', 'Contact'];
 
@@ -82,7 +83,7 @@ export default function Header({currentPage, handlePageChange}){
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Jace Burgess">
-                <Avatar alt="Jace Burgess" src="./assets/Avatar.jpg" sx={{width: 56, height: 56}} />
+                <Avatar alt="Jace Burgess" src={AvatorPic} sx={{width: 56, height: 56}} />
             </Tooltip>
           </Box>
         </Toolbar>

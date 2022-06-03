@@ -8,17 +8,27 @@ export default function Portfolio() {
         {/* most recent work */}
         <div className="section-content box-column">
           <a
-            href="https://game-it1.herokuapp.com/"
+            href="https://wheyts-up.herokuapp.com/"
             className="tile large-tile row"
             target="_blank"
             rel="noreferrer"
           >
             <div className="tile-tag">
-              <p className="tile-title">Game It</p>
+              <p className="tile-title">Wheyts Up</p>
             </div>
           </a>
           {/* other projects */}
           <div className="box-row">
+            <a
+              href="https://game-it1.herokuapp.com/"
+              className="tile small-tile tile-1 row"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="tile-tag">
+                <p className="tile-title">Game It</p>
+              </div>
+            </a>
             <a
               href=" https://jburg1414.github.io/work-day-scheduler/"
               className="tile small-tile tile-1 row"

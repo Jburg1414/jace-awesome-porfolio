@@ -21,7 +21,7 @@ export default function Portfolio() {
           <div className="box-row">
             <a
               href="https://game-it1.herokuapp.com/"
-              className="tile small-tile tile-1 row"
+              className="tile small-tile tile-0 row"
               target="_blank"
               rel="noreferrer"
             >
